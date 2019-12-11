@@ -1,0 +1,33 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.tbcontent {
+    text-align: center;
+}
+
+.pcentrado {
+    text-align: center;
+    color: #dddddd;
+    background-color: brown;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.tcentrado {
+    text-align: center;
+    align-content: center;
+    /* margin-left: 10%; */
+    margin-bottom: 1%;
+    width: 80%;
+    height: 20%;
+    background-color: aliceblue;
+}
+
+.tabla_index {
+    background-color: #dddddd;
+    margin-left: 10%;
+    margin-right: 10%;
+}

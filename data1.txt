@@ -1,0 +1,19 @@
+Pepperoni,P
+Sausage,P
+Mushrooms,P
+Onions,S
+Ham,P
+Canadian Bacon,P
+Pineapple,P
+Eggplant,P
+Tomato & Basil,P
+Green Peppers,S
+Hamburger,P
+Spinach,P
+Artichoke,P
+Buffalo Chicken,P
+Barbecue Chicken,P
+Anchovies,P
+Black Olives,P
+Fresh Garlic,P
+Zucchini,P

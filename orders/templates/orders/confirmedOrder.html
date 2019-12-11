@@ -1,0 +1,18 @@
+{% extends "orders/base.html" %} {% block title %} Register {% endblock %} {% block body %}
+
+<head>
+        <title>
+                Done           
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+            
+
+</head>
+<body>
+
+
+    <h1 style="text-align: center;">Your order is now completed.</h1>
+    <a type="button" href="{%url 'Status'%}" >Check Status of my order</a>
+</body>
+{% endblock %}

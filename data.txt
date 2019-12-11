@@ -1,0 +1,66 @@
+Cheese,RP,S,12.70
+1 topping,RP,S,13.70
+2 toppings,RP,S,15.20
+3 toppings ,RP,S,16.20
+Special,RP,S,17.75
+Cheese,RP,L,17.95
+1 topping,RP,L,19.95
+2 toppings,RP,L,21.95
+3 toppings ,RP,L,23.95
+Special,RP,L,25.95
+Cheese,SP,S,25.95
+1 topping,SP,S,26.45
+2 toppings,SP,S,28.45
+3 toppings ,SP,S,29.45
+Special,SP,S,30.45
+Cheese,SP,L,38.70
+1 topping,SP,L,40.70
+2 toppings,SP,L,42.70
+3 toppings ,SP,L,44.70
+Special,SP,L,45.70
+Cheese,Sub,S,6.50
+Italian,Sub,S,6.50
+Ham+Cheese,Sub,S,6.50
+Meatball,Sub,S,6.50
+Tuna,Sub,S,6.50
+Turkey,Sub,S,7.50
+Chicken Parmigiana,Sub,S,7.50
+Eggplan Parmigiana,Sub,S,6.50
+Steak,Sub,S,6.50
+Sausage peppers and onions,Sub,S,8.50
+Hamburger,Sub,S,4.60
+Cheeseburger,Sub,S,5.10
+Fried Chicken,Sub,S,6.95
+Veggie,Sub,S,6.95
+Cheese,Sub,L,7.95
+Italian,Sub,L,7.95
+Ham+Cheese,Sub,L,7.95
+Meatball,Sub,L,7.95
+Tuna,Sub,L,7.95
+Turkey,Sub,L,8.50
+Chicken Parmigiana,Sub,L,8.50
+Eggplan Parmigiana,Sub,L,7.95
+Steak,Sub,L,7.95
+Hamburger,Sub,L,6.95
+Cheeseburger,Sub,L,7.45
+Fried Chicken,Sub,L,8.50
+Veggie,Sub,L,8.50
+Baked Ziti w/Mozzarella,Pasta,N,6.5
+Baked Ziti w/Meatballs,Pasta,N,8.75
+Baked Ziti w/Chicken,Pasta,N,9.75
+Garden Salad,Salad,N,6.25
+Greek Salad,Salad,N,8.25
+Antipasto,Salad,N,8.25
+Salad w/Tuna,Salad,N,8.25
+Garden Salad,DP,S,35
+Greek Salad,DP,S,45
+Antipasto,DP,S,45
+Baked Ziti,DP,S,35
+Meatball Parm,DP,S,45
+Chicken Parm,DP,S,45
+Garden Salad,DP,L,60
+Greek Salad,DP,L,70
+Antipasto,DP,L,70
+Baked Ziti,DP,L,60
+Meatball Parm,DP,L,70
+Chicken Parm,DP,L,80

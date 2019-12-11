@@ -1,0 +1,30 @@
+{% extends "orders/base.html" %} {% block title %} Status {% endblock %} {% block body %}
+
+<body>
+
+    <div class="card" style="width:50rem; margin: auto">
+            <div class="card-body">
+                <h1 class="card-title text-center">Shopping Cart</h1>
+                <ul class="list-group"> 
+                    {%for producto,producto2 in Cart%}
+                        <li class="list-group-item">{{producto.product}} - {{producto.tipe}} - {{producto.size}} - {{producto2.topings}} - {{producto.price}}</li>                    
+                    {%endfor%}
+                </ul>
+
+
+            {%if Cart2|length %}
+            <div class="alert alert-primary" role="alert">
+                Please check the products on your shopping cart and your total {{precio}}. If you are sure  <a href="{%url 'Confirmado'%}" class="alert-link">click here</a>.
+            </div>
+            {%else%}
+            <div class="alert alert-primary" role="alert">
+                No hay productos en el Carrito.
+            </div>
+            </div>
+    </div>
+
+    {% endif %}
+
+
+</body>
+{% endblock %}

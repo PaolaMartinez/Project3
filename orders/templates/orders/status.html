@@ -1,0 +1,17 @@
+{% extends "orders/base.html" %} {% block title %} Status {% endblock %} {% block body %}
+
+<body>
+    <ul>
+        {%for name,ord in Orders%}
+            {%if ord.status%}
+                <li> The status of {{name.product}} is completed.</li>
+            {%else%}
+                <li> The status of {{name.product}} is pending</li>
+            {%endif%}
+        {%empty%}
+            <h1> You have not submitted any order yet.</h1>
+        {%endfor%}
+
+    </ul>
+</body>
+{% endblock %}

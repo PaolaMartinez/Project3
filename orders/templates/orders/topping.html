@@ -1,0 +1,111 @@
+{% extends "orders/base.html" %} {% block title %} Menu {% endblock %} {% block body %}
+
+
+<script>
+    function ToppingLimit() {
+        let p = "{{product.id}}"
+        console.log(p)
+        var lista = document.querySelectorAll('input')
+        var len = lista.length
+        var num = document.querySelectorAll('input[type="checkbox"]:checked').length
+        var limit = "{{limit}}"
+        if (num >= parseInt(limit)) {
+            console.log("ya 1:v")
+            for (var i = 0; i < len; i++) {
+                if (!lista[i].checked) {
+                    lista[i].disabled = true
+                } else {
+                    lista[i].disabled = false
+                }
+            }
+        } else {
+            console.log("ya 2:v")
+            for (var i = 0; i < len; i++) {
+                lista[i].disabled = false
+            }
+        }
+    }
+
+    function Continuar(params) {
+        var lista = document.querySelectorAll('input[type="checkbox"]:checked')
+        var array = new Array(lista.length)
+        for (var i = 0; i < lista.length; i++) {
+            array.push(lista[i].nextSibling.data)
+        }
+        lista = array.slice(lista.length, lista.length * 2)
+        console.log(lista)
+
+        
+        const form = document.createElement('form');
+        form.method = 'post';
+        form.action = "/confirm";
+        const hiddenField = document.createElement('input');
+        hiddenField.type = 'hidden';
+        hiddenField.name = 'lista';
+        hiddenField.value = lista;
+
+        form.appendChild(hiddenField);
+
+        const hiddenField2 = document.createElement('input');
+        hiddenField2.type = 'hidden';
+        hiddenField2.name = 'csrfmiddlewaretoken';
+        hiddenField2.value = '{{ csrf_token }}';
+
+        form.appendChild(hiddenField2);
+
+        const hiddenField3 = document.createElement('input');
+        let p = "{{product.id}}"
+        hiddenField3.type = 'hidden';
+        hiddenField3.name = 'productID';
+        hiddenField3.value = p;
+
+        form.appendChild(hiddenField3);
+
+        document.body.appendChild(form);
+        form.submit();
+
+        return
+    }
+
+    
+</script>
+<div align="center">
+    <h1>Our Menu</h1>
+
+</div>
+<div class="tabla_index">
+
+
+
+
+    <table class="table table-striped table-dark">
+        <div align="center">
+            <h1>Toppings</h1>
+            <h1>{{limit}}</h1>
+        </div>
+        <thead>
+            <tr>
+
+                <th scope="col">Product</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for topping in toppings %}
+            <tr>
+                <td>
+                    <input onclick="ToppingLimit()" type="checkbox" > {{topping.product}}
+                </td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+    {% csrf_token %}
+    <button class="btn btn-secondary btn-sm"onclick="Continuar()">Add to cart</button>
+
+
+
+</div>
+
+{% endblock %}
